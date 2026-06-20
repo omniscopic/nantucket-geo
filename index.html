@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<html data-src-ver="c10ae09e" lang="en" data-om-id="c10ae09e:0">
+<head data-om-id="c10ae09e:1">
+<style data-omelette-injected>html,body{background:transparent}</style><script data-omelette-injected>(()=>{var j=["https://claude.ai","https://preview.claude.ai"];var x=true;var S=30000;var f=3000;document.addEventListener("DOMContentLoaded",()=>{const H=window.Babel;const G="om-src-id";if(H&&H.registerPlugin&&!(H.availablePlugins&&H.availablePlugins[G])){H.registerPlugin(G,({types:Y})=>({visitor:{JSXOpeningElement(U,Q){const J=U.node;if(J.name&&J.name.type==="JSXMemberExpression")return;for(let V=0;V<J.attributes.length;V++){const L=J.attributes[V];if(L.type==="JSXAttribute"&&L.name&&L.name.name==="data-om-id")return}const W=Q.file&&Q.file.opts&&Q.file.opts.filename||"?";const Z=J.loc&&J.loc.start;const z=`jsx:${W}:${J.start??0}:${Z?Z.line:0}:${Z?Z.column+1:0}`;J.attributes.push(Y.jsxAttribute(Y.jsxIdentifier("data-om-id"),Y.stringLiteral(z)))}}}))}const k="om-text-extract";let A=false;if(x&&H&&H.registerPlugin&&!(H.availablePlugins&&H.availablePlugins[k])){const Y=window.React;if(Y&&Y.useSyncExternalStore&&Y.createElement){A=true;const U={};const Q=new Set;let J=0;window.__omTextO=U;window.__omTextSet=(z)=>{for(const V in z){const L=z[V];if(L==null)delete U[V];else U[V]=L}J++;Q.forEach((V)=>V())};const W=(z)=>{Q.add(z);return()=>Q.delete(z)};const Z=()=>J;window.__OmT=function z(V){Y.useSyncExternalStore(W,Z,Z);return Y.createElement("span",{"data-om-text":V.i,className:"__om-t"},V.i in U?U[V.i]:V.children)};H.registerPlugin(k,({types:z})=>{const V={style:1,script:1,noscript:1,textarea:1,title:1,option:1,text:1,tspan:1,textPath:1};const L={placeholder:1,alt:1,title:1,label:1,"aria-label":1,"aria-description":1,"aria-placeholder":1};const _=($,C)=>z.logicalExpression("??",z.memberExpression(z.logicalExpression("||",z.memberExpression(z.identifier("window"),z.identifier("__omTextO")),z.objectExpression([])),z.stringLiteral($),true),C);const E=($)=>$.file&&$.file.opts&&$.file.opts.filename||"?";const B=($)=>$.file&&$.file.code||"";const b=($,C)=>{const X=(F)=>F&&F.start!=null&&F.end!=null&&(F.type==="StringLiteral"||F.type==="TemplateLiteral"&&F.expressions.length===0)?[F.start,F.end]:null;const N=X(C);if(N)return N;if(C&&C.type==="Identifier"){const F=$.scope.getBinding(C.name);if(F&&F.constant&&F.path.node.type==="VariableDeclarator"){return X(F.path.node.init)}}return null};const M=($,C,X)=>{const N=$.node;let F=false;const w=(K,q)=>{F=true;return z.jsxElement(z.jsxOpeningElement(z.jsxIdentifier("__OmT"),[z.jsxAttribute(z.jsxIdentifier("i"),z.stringLiteral(K))],false),z.jsxClosingElement(z.jsxIdentifier("__OmT")),[q],false)};const D=N.children.map((K)=>{if(K.type==="JSXText"){if(K.start==null||K.end==null)return K;const q=X.slice(K.start,K.end);const R=q.length-q.trimStart().length;const m=q.length-q.trimEnd().length;if(R+m>=q.length)return K;return w(`txt:${C}:${K.start+R}:${K.end-m}`,K)}if(K.type==="JSXExpressionContainer"){const q=b($,K.expression);if(q)return w(`str:${C}:${q[0]}:${q[1]}`,K)}return K});if(F)N.children=D};return{visitor:{JSXOpeningElement($,C){const X=$.node;const N=E(C);const F={};for(let w=0;w<X.attributes.length;w++){const D=X.attributes[w];if(D.type!=="JSXAttribute"||!D.name)continue;const K=D.name.name;if(!L[K])continue;if(!D.value||D.value.type!=="StringLiteral")continue;if(D.value.start==null||D.value.end==null)continue;const q=`txt:${N}:${D.value.start}:${D.value.end}`;F[K]=q;D.value=z.jsxExpressionContainer(_(q,z.stringLiteral(D.value.value)))}if(Object.keys(F).length){X.attributes.push(z.jsxAttribute(z.jsxIdentifier("data-om-text-attrs"),z.stringLiteral(JSON.stringify(F))))}},JSXElement($,C){const X=$.node.openingElement;const N=X&&X.name&&X.name.name;if(N==="__OmT")return;if(typeof N==="string"&&V[N])return;M($,E(C),B(C))},JSXFragment($,C){M($,E(C),B(C))}}}})}}const u=A?["transform-react-jsx-source",G,k]:["transform-react-jsx-source",G];document.querySelectorAll('script[type="text/babel"],script[type="text/jsx"]').forEach((Y,U)=>{const Q=Y.getAttribute("data-plugins")||"";const J=u.filter((W)=>Q.indexOf(W)<0);if(J.length){Y.setAttribute("data-plugins",Q?`${Q},${J.join(",")}`:J.join(","))}if(!Y.hasAttribute("data-filename")){Y.setAttribute("data-filename",Y.getAttribute("src")||`inline-${U}`)}})});var y=window.parent;if(y&&y!==window){const H=(Q,J)=>{try{y.postMessage({__omelette_log:true,type:Q,data:J},"*")}catch{}};["log","warn","error"].forEach((Q)=>{const J=console[Q];console[Q]=(...W)=>{const Z=W.map((z)=>{try{return typeof z==="object"?JSON.stringify(z):String(z)}catch{try{return String(z)}catch{return"[unstringifiable]"}}}).join(" ");H(Q,Z);J.apply(console,W)}});window.addEventListener("error",(Q)=>{const J=Q.target;if(J&&J!==window&&J.tagName){const W=J.src||J.href||"";H("resource_error",`${J.tagName} failed to load: ${W}`)}else{H("error",`${Q.message||"Unknown error"} at ${Q.filename||"?"}:${Q.lineno||0}:${Q.colno||0}`)}},true);window.addEventListener("unhandledrejection",(Q)=>{const J=Q.reason;const W=J instanceof Error?`${J.message} ${J.stack}`:String(J);H("error",`Unhandled rejection: ${W}`)});const G=()=>{try{y.postMessage({type:"omelette:height",height:document.documentElement.scrollHeight},"*")}catch{}};if(document.readyState==="complete")G();else window.addEventListener("load",G);if(window.ResizeObserver)new ResizeObserver(G).observe(document.documentElement);const k={};let A=0;window.claude={complete(Q){return new Promise((J,W)=>{if(!j.length){W(new Error("claude.complete: no parent origin"));return}const Z=`c${++A}`;const z=()=>setTimeout(()=>{delete k[Z];W(new Error(`claude.complete: no data for ${S/1000}s`))},S);const V=z();k[Z]={resolve:J,reject:W,text:"",t:V,arm:z};try{for(const L of j){y.postMessage({__om_api:true,id:Z,body:Q},L)}}catch(L){clearTimeout(V);delete k[Z];W(L)}})}};const u={};let Y=0;window.omelette={writeFile:(Q,J)=>new Promise((W,Z)=>{if(!j.length){W();return}const z=`f${++Y}`;const V=setTimeout(()=>{delete u[z];W()},f);u[z]={resolve:W,reject:Z,t:V};try{for(const L of j){y.postMessage({__om_file:true,id:z,op:"write",path:Q,content:J},L)}}catch{clearTimeout(V);delete u[z];W()}})};const U=(Q)=>{try{return JSON.stringify(Q)}catch{return JSON.stringify(String(Q))}};window.addEventListener("message",(Q)=>{if(j.indexOf(Q.origin)<0)return;if(Q.source!==y)return;const J=Q.data;if(!J)return;if(J.type==="omelette-preview-refresh"){if(typeof J.token!=="string"||!/^[0-9a-f.-]+(\.(rc|pr-[0-9]+))?(\.[0-9]+\.[0-9a-f]{16})?$/.test(J.token))return;const z=Math.max(1,Math.floor((J.expiresAt||0)-Date.now()/1000));document.cookie="__Host-omelette-preview="+J.token+"; Path=/; Secure; SameSite=None; Partitioned; Max-Age="+z;return}if(J.__om_file_r){const z=u[J.id];if(!z)return;clearTimeout(z.t);delete u[J.id];if(J.ok)z.resolve();else z.reject(new Error(J.error||"write failed"));return}if(J.__om_api_r){const z=k[J.id];if(!z)return;if(J.error!=null){clearTimeout(z.t);delete k[J.id];z.reject(new Error(J.error));return}if(J.chunk!=null){clearTimeout(z.t);z.t=z.arm();z.text+=J.chunk;return}if(J.done){clearTimeout(z.t);delete k[J.id];z.resolve(J.text!=null?J.text:z.text);return}return}if(!J.__om_eval)return;const W=J;const Z=(z)=>{Q.source.postMessage({...z,__om_eval_r:1,id:W.id},Q.origin)};try{const z=(0,eval)(W.code);if(z&&typeof z.then==="function"){z.then((V)=>Z({ok:1,v:U(V)}),(V)=>Z({ok:0,e:String(V)}))}else{Z({ok:1,v:U(z)})}}catch(z){Z({ok:0,e:String(z)})}})}})();
+</script>
+
+<meta charset="utf-8" data-om-id="c10ae09e:2">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" data-om-id="c10ae09e:3">
 <title>Geo-Intelligence Report — Southeastern Nantucket</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Spectral:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<link rel="preconnect" href="https://fonts.googleapis.com" data-om-id="c10ae09e:4">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin data-om-id="c10ae09e:5">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Spectral:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" data-om-id="c10ae09e:6">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" data-om-id="c10ae09e:7">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <style>
   :root{
@@ -120,6 +123,13 @@
   .d-meta .v{font-size:12px;margin-top:3px;font-weight:500;font-variant-numeric:tabular-nums}
   .d-desc{font-family:var(--serif);font-size:16px;line-height:1.6;color:#2c281f;margin-top:18px;white-space:pre-wrap}
   .d-desc.empty{color:var(--ink3);font-style:italic}
+  .edit-label{font-family:var(--mono);font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink3);margin-top:16px;margin-bottom:5px}
+  .edit-field{width:100%;font-family:var(--serif);font-size:16px;line-height:1.55;color:#2c281f;background:#fffdf5;border:1px solid var(--line2);padding:9px 11px;resize:vertical;display:block}
+  .edit-field:focus{outline:none;border-color:var(--red);box-shadow:0 0 0 2px rgba(180,54,42,.25)}
+  .edit-field.edit-title{font-family:var(--sans);font-weight:700;font-size:20px;line-height:1.15}
+  .edit-banner{display:none;background:var(--red);color:#fff;font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;padding:7px 26px;text-align:center}
+  body.editing .edit-banner{display:block}
+  .btn.on{background:var(--red);color:#fff;border-color:var(--red)}
   .d-video{margin-top:20px}
   .d-rule{height:1px;background:var(--line);margin:20px 0}
   .d-coordbar{font-family:var(--mono);font-size:10px;color:var(--ink2);letter-spacing:.05em;display:flex;gap:14px;flex-wrap:wrap;margin-top:6px}
@@ -150,70 +160,73 @@
   }
 </style>
 </head>
-<body>
-<div class="app">
-  <aside class="dossier">
-    <div class="masthead">
-      <span class="tick tl"></span><span class="tick tr"></span>
-      <div class="eyebrow"><span>FIELD SURVEY · SURFICIAL GEOLOGY</span><span class="cls">● ACTIVE</span></div>
-      <h1 class="title">Geo-Intelligence<br><b>Report</b></h1>
-      <div class="subtitle">Southeastern Nantucket — Sconset &amp; Sankaty Head transect</div>
-      <div class="metagrid">
-        <div><div class="k">Document No.</div><div class="v" id="m-doc">NAN-26-0619</div></div>
-        <div><div class="k">Survey Date</div><div class="v" id="m-date">2026·06·19</div></div>
-        <div><div class="k">Datum</div><div class="v">WGS 84</div></div>
-        <div><div class="k">Specimens</div><div class="v" id="m-count">—</div></div>
-        <div class="span2"><div class="k">Coverage Bounds</div><div class="v" id="m-bounds">—</div></div>
+<body data-om-id="c10ae09e:8">
+<div class="app" data-om-id="c10ae09e:9">
+  <aside class="dossier" data-om-id="c10ae09e:10">
+    <div class="masthead" data-om-id="c10ae09e:11">
+      <span class="tick tl" data-om-id="c10ae09e:12"></span><span class="tick tr" data-om-id="c10ae09e:13"></span>
+      <div class="eyebrow" data-om-id="c10ae09e:14"><span data-om-id="c10ae09e:15">FIELD SURVEY · SURFICIAL GEOLOGY</span><span class="cls" data-om-id="c10ae09e:16">● ACTIVE</span></div>
+      <h1 class="title" data-om-id="c10ae09e:17">Geo-Intelligence<br data-om-id="c10ae09e:18"><b data-om-id="c10ae09e:19">Report</b></h1>
+      <div class="subtitle" data-om-id="c10ae09e:20">Southeastern Nantucket — Sconset &amp; Sankaty Head transect</div>
+      <div class="metagrid" data-om-id="c10ae09e:21">
+        <div data-om-id="c10ae09e:22"><div class="k" data-om-id="c10ae09e:23">Document No.</div><div class="v" id="m-doc" data-om-id="c10ae09e:24">NAN-26-0619</div></div>
+        <div data-om-id="c10ae09e:25"><div class="k" data-om-id="c10ae09e:26">Survey Date</div><div class="v" id="m-date" data-om-id="c10ae09e:27">2026·06·19</div></div>
+        <div data-om-id="c10ae09e:28"><div class="k" data-om-id="c10ae09e:29">Datum</div><div class="v" data-om-id="c10ae09e:30">WGS 84</div></div>
+        <div data-om-id="c10ae09e:31"><div class="k" data-om-id="c10ae09e:32">Specimens</div><div class="v" id="m-count" data-om-id="c10ae09e:33">—</div></div>
+        <div class="span2" data-om-id="c10ae09e:34"><div class="k" data-om-id="c10ae09e:35">Coverage Bounds</div><div class="v" id="m-bounds" data-om-id="c10ae09e:36">—</div></div>
       </div>
     </div>
-    <div class="listhead"><span>Specimen <b>Index</b></span><span id="m-route">ROUTE ░ S→N</span></div>
-    <div class="speclist" id="speclist"></div>
-    <div class="dossier-foot">
-      <button class="btn red" id="help-add">✚ Add Photos</button>
-      <button class="btn" id="help-deploy">⇪ Publish</button>
-      <div class="foot-credit">IMAGERY · ESRI<br>NANTUCKET CO., MA</div>
+    <div class="listhead" data-om-id="c10ae09e:37"><span data-om-id="c10ae09e:38">Specimen <b data-om-id="c10ae09e:39">Index</b></span><span id="m-route" data-om-id="c10ae09e:40">ROUTE ░ S→N</span></div>
+    <div class="speclist" id="speclist" data-om-id="c10ae09e:41"></div>
+    <div class="dossier-foot" data-om-id="c10ae09e:42">
+      <button class="btn red" id="help-add" data-om-id="c10ae09e:43">✚ Add Photos</button>
+      <button class="btn" id="help-deploy" data-om-id="c10ae09e:44">⇪ Publish</button>
+      <button class="btn" id="edit-toggle" data-om-id="c10ae09e:45">✎ Edit Text</button>
+      <button class="btn" id="export-btn" data-om-id="c10ae09e:46">⤓ Export</button>
+      <div class="foot-credit" data-om-id="c10ae09e:47">IMAGERY · ESRI<br data-om-id="c10ae09e:48">NANTUCKET CO., MA</div>
     </div>
   </aside>
 
-  <main class="mapwrap">
-    <div id="map"></div>
-    <div class="map-grid"></div>
-    <div class="map-vig"></div>
-    <div class="mui tl"><div class="chip"><div class="ct">SECTOR</div><div class="cv">SE NANTUCKET · <b>EAST SHORE</b></div></div></div>
-    <div class="mui tr"><div class="layers" id="layers">
-      <button data-l="sat" class="on">Satellite</button>
-      <button data-l="topo">Topo</button>
+  <main class="mapwrap" data-om-id="c10ae09e:49">
+    <div id="map" data-om-id="c10ae09e:50"></div>
+    <div class="map-grid" data-om-id="c10ae09e:51"></div>
+    <div class="map-vig" data-om-id="c10ae09e:52"></div>
+    <div class="mui tl" data-om-id="c10ae09e:53"><div class="chip" data-om-id="c10ae09e:54"><div class="ct" data-om-id="c10ae09e:55">SECTOR</div><div class="cv" data-om-id="c10ae09e:56">SE NANTUCKET · <b data-om-id="c10ae09e:57">EAST SHORE</b></div></div></div>
+    <div class="mui tr" data-om-id="c10ae09e:58"><div class="layers" id="layers" data-om-id="c10ae09e:59">
+      <button data-l="sat" class="on" data-om-id="c10ae09e:60">Satellite</button>
+      <button data-l="topo" data-om-id="c10ae09e:61">Topo</button>
     </div></div>
-    <div class="mui bl"><div class="chip readout"><div class="ct">CURSOR · LAT / LON</div><div class="cv" id="readout">41.2730° N · 069.9650° W</div></div></div>
+    <div class="mui bl" data-om-id="c10ae09e:62"><div class="chip readout" data-om-id="c10ae09e:63"><div class="ct" data-om-id="c10ae09e:64">CURSOR · LAT / LON</div><div class="cv" id="readout" data-om-id="c10ae09e:65">41.2730° N · 069.9650° W</div></div></div>
   </main>
 </div>
 
-<div class="detail" id="detail">
-  <div class="d-photo" id="d-photo">
-    <div class="grad"></div>
-    <div class="d-badge" id="d-badge">SPEC 01</div>
-    <button class="d-close" id="d-close">✕</button>
-    <div class="d-fname mono" id="d-fname"></div>
+<div class="detail" id="detail" data-om-id="c10ae09e:66">
+  <div class="d-photo" id="d-photo" data-om-id="c10ae09e:67">
+    <div class="grad" data-om-id="c10ae09e:68"></div>
+    <div class="d-badge" id="d-badge" data-om-id="c10ae09e:69">SPEC 01</div>
+    <button class="d-close" id="d-close" data-om-id="c10ae09e:70">✕</button>
+    <div class="d-fname mono" id="d-fname" data-om-id="c10ae09e:71"></div>
   </div>
-  <div class="d-body">
-    <h2 id="d-title">—</h2>
-    <div class="d-meta">
-      <div><div class="k">Latitude</div><div class="v" id="d-lat">—</div></div>
-      <div><div class="k">Longitude</div><div class="v" id="d-lon">—</div></div>
-      <div><div class="k">Elevation</div><div class="v" id="d-alt">—</div></div>
-      <div><div class="k">Captured</div><div class="v" id="d-time">—</div></div>
-      <div><div class="k">MGRS-ish</div><div class="v" id="d-grid">—</div></div>
-      <div><div class="k">Bearing</div><div class="v" id="d-brg">—</div></div>
+  <div class="edit-banner" id="edit-banner" data-om-id="c10ae09e:72">✎ Editing — changes save in this browser. Use ⤓ Export to publish them.</div>
+  <div class="d-body" data-om-id="c10ae09e:73">
+    <h2 id="d-title" data-om-id="c10ae09e:74">—</h2>
+    <div class="d-meta" data-om-id="c10ae09e:75">
+      <div data-om-id="c10ae09e:76"><div class="k" data-om-id="c10ae09e:77">Latitude</div><div class="v" id="d-lat" data-om-id="c10ae09e:78">—</div></div>
+      <div data-om-id="c10ae09e:79"><div class="k" data-om-id="c10ae09e:80">Longitude</div><div class="v" id="d-lon" data-om-id="c10ae09e:81">—</div></div>
+      <div data-om-id="c10ae09e:82"><div class="k" data-om-id="c10ae09e:83">Elevation</div><div class="v" id="d-alt" data-om-id="c10ae09e:84">—</div></div>
+      <div data-om-id="c10ae09e:85"><div class="k" data-om-id="c10ae09e:86">Captured</div><div class="v" id="d-time" data-om-id="c10ae09e:87">—</div></div>
+      <div data-om-id="c10ae09e:88"><div class="k" data-om-id="c10ae09e:89">MGRS-ish</div><div class="v" id="d-grid" data-om-id="c10ae09e:90">—</div></div>
+      <div data-om-id="c10ae09e:91"><div class="k" data-om-id="c10ae09e:92">Bearing</div><div class="v" id="d-brg" data-om-id="c10ae09e:93">—</div></div>
     </div>
-    <div class="d-desc" id="d-desc"></div>
-    <div class="d-video" id="d-video"></div>
+    <div class="d-desc" id="d-desc" data-om-id="c10ae09e:94"></div>
+    <div class="d-video" id="d-video" data-om-id="c10ae09e:95"></div>
   </div>
 </div>
 
-<div class="scrim" id="scrim">
-  <div class="modal">
-    <div class="modal-h"><h3 id="modal-title">Field Manual</h3><button class="d-close" style="position:static" id="modal-close">✕</button></div>
-    <div class="modal-b" id="modal-body"></div>
+<div class="scrim" id="scrim" data-om-id="c10ae09e:96">
+  <div class="modal" data-om-id="c10ae09e:97">
+    <div class="modal-h" data-om-id="c10ae09e:98"><h3 id="modal-title" data-om-id="c10ae09e:99">Field Manual</h3><button class="d-close" style="position:static" id="modal-close" data-om-id="c10ae09e:100">✕</button></div>
+    <div class="modal-b" id="modal-body" data-om-id="c10ae09e:101"></div>
   </div>
 </div>
 
@@ -238,93 +251,93 @@
      change the filename + text. If the photo came off a phone with location on,
      you can DELETE the lat/lon/alt/time lines and they'll fill in by themselves.
    ============================================================================ */
+/*PHOTOS_START*/
 const PHOTOS = [
   { file:"IMG_0535.jpeg", type:"reference",
     title:"Surficial Geologic Map — Eastern Nantucket",
-    description:"",
+    description:"This is the surface geology from Skehan (2001) Roadside Geology of Massachusetts",
     video:"",
-    lat:41.281181, lon:-70.096353, alt:2.2,  time:"2026-06-19 15:30" },
+    lat:41.281181, lon:-70.096353, alt:2.2, time:"2026-06-19 15:30" },
 
   { file:"IMG_0541.jpeg", type:"specimen",
     title:"Garnet–Magnetite Heavy-Mineral Sand, 'Sconset Beach",
-    description:"",
+    description:"There is a really feature of a density layer exposed at the Sconset public beach. It's a great example of how water can sort grains while we sleep.",
     video:"",
-    lat:41.261008, lon:-69.962661, alt:3.9,  time:"2026-06-19 16:20" },
+    lat:41.261008, lon:-69.962661, alt:3.9, time:"2026-06-19 16:20" },
 
   { file:"IMG_0543.jpeg", type:"specimen",
     title:"Almandine Garnet Concentrate (macro)",
-    description:"",
+    description:"Closeup of the Almandine-Garnet-Magnetite grains. Lots of other minerals in there too. Beautiful.",
     video:"",
-    lat:41.261006, lon:-69.962653, alt:1.7,  time:"2026-06-19 16:20" },
+    lat:41.261006, lon:-69.962653, alt:1.7, time:"2026-06-19 16:20" },
 
   { file:"IMG_0550.jpeg", type:"specimen",
     title:"Polymict Pebble Lag — Outwash Provenance",
-    description:"",
+    description:"The sediment at the public beach shows a finely sorted sample of the same outwash till. Continuity across scales!",
     video:"",
-    lat:41.261019, lon:-69.962683, alt:2.4,  time:"2026-06-19 16:22" },
+    lat:41.261019, lon:-69.962683, alt:2.4, time:"2026-06-19 16:22" },
 
   { file:"IMG_0552.jpeg", type:"specimen",
     title:"Quartz-Rich Foreshore Sand (macro)",
-    description:"",
+    description:"Close up of the quatz sand indicative of a high energy environment. Quartz is highly resistant to weathering so it the only thing left. The quartzites we see all over the island are metamorphosed chunks of this type of sand.",
     video:"",
-    lat:41.264519, lon:-69.961792, alt:6.4,  time:"2026-06-19 16:35" },
+    lat:41.264519, lon:-69.961792, alt:6.4, time:"2026-06-19 16:35" },
 
   { file:"IMG_0554.jpeg", type:"specimen",
     title:"Bluff Retreat & Collapsed Stairway",
-    description:"",
+    description:"Phot takes from the geotubes observation overlook. good place to see how erosion works and some of the Wisconsonian glaciation deposits. The geotubes are also visible at the bottom of the bluff to the left.",
     video:"",
     lat:41.278458, lon:-69.962442, alt:22.9, time:"2026-06-19 16:52" },
 
   { file:"IMG_0556.jpeg", type:"specimen",
     title:"Shell-Hash Slump Face, Sankaty Bluff",
-    description:"",
+    description:"The one view I could find of the Sangamon Interglacial marine deposits. The white shells are actually marine fossils about 130,000 years old!",
     video:"",
     lat:41.278472, lon:-69.962478, alt:23.8, time:"2026-06-19 16:53" },
 
   { file:"IMG_0558.jpeg", type:"specimen",
     title:"Glacial Erratic — Granitic Boulder",
-    description:"",
+    description:"Nice piece of probably Dedham granite in the grounds of Sankaty Lighthouse.",
     video:"",
     lat:41.283658, lon:-69.965172, alt:28.2, time:"2026-06-19 16:57" },
 
   { file:"IMG_0560.jpeg", type:"specimen",
     title:"Sankaty Head — Moraine Crest & Light",
-    description:"",
+    description:"Nice view of the Wisconsonian outwash plain to the west (beyond the golf course)",
     video:"",
     lat:41.283778, lon:-69.965369, alt:29.3, time:"2026-06-19 16:57" },
 
   { file:"IMG_0563.jpeg", type:"specimen",
     title:"Active Bluff Erosion, Outwash Cliff",
-    description:"",
+    description:"View of Sankaty Bluff from the north, stading at the end of Hoiks Hollow Rd. Would be great to get down onto the beach but too far of a drop.",
     video:"",
     lat:41.290736, lon:-69.968894, alt:11.1, time:"2026-06-19 17:14" },
 
   { file:"IMG_0564.jpeg", type:"specimen",
     title:"Metamorphic Cobble on Glacial Till Trail",
-    description:"",
+    description:"Just an example of a rhyolite erratic",
     video:"",
     lat:41.279206, lon:-69.987869, alt:21.6, time:"2026-06-19 17:29" },
 
-  // ▶ VIDEO STOP. This frame has NO embedded GPS, so set lat/lon yourself
-  //   (or replace `video` with the original .mov and the page reads its GPS).
   { file:"sandpit_clip.jpeg", type:"specimen",
     title:"Terminal Moraine Overlook",
-    description:"",
-    video:"https://youtu.be/eexg3QfQQiw",   // ← YouTube/Vimeo link, OR a file like "media/clip.mp4"
-    lat:41.274500, lon:-70.005600, alt:null, time:"2026-06-19" },
+    description:"This is taken from the sand pit just north of Windswept bog. This is a great collecting locality (ample rocks) and the view from the top of the bluff offers a great look at the terminal moriane to the north and outwash plan to the south. See video for better explanation.",
+    video:"https://youtu.be/eexg3QfQQiw",
+    lat:41.2745, lon:-70.0056, alt:null, time:"2026-06-19" },
 
   { file:"usgs_well.jpeg", type:"specimen",
     title:"USGS Groundwater Observation Well",
-    description:"",
+    description:"The infamous USGS borehole.",
     video:"",
-    lat:41.265450, lon:-70.037697, alt:16.7, time:"2024-06-22 15:51" },
+    lat:41.26545, lon:-70.037697, alt:16.7, time:"2024-06-22 15:51" },
 
   { file:"xenolith.jpeg", type:"specimen",
     title:"Xenolith in Glacial Erratic — Granite-Veined Schist",
-    description:"",
+    description:"One of my favorite xenoliths. Check out the video below for an explanation. \n",
     video:"https://youtu.be/dzrz3af67Ak?t=34",
     lat:41.279775, lon:-70.037506, alt:22.3, time:"2024-09-05 16:51" },
 ];
+/*PHOTOS_END*/
 </script>
 <script>
 /* ---------- helpers ---------- */
@@ -404,6 +417,9 @@ let markers=[], active=-1;
 const specimens = PHOTOS.filter(p=>p.type!=='reference');
 
 (async function init(){
+  // apply any edits saved in this browser (from Edit Text mode)
+  const ov=loadOverrides();
+  PHOTOS.forEach(p=>{ const o=ov[p.file]; if(o){ ['title','description','video'].forEach(k=>{ if(o[k]!=null) p[k]=o[k]; }); } });
   // resolve coordinates (auto-extract any that are missing)
   for(const p of PHOTOS){
     if(p.lat==null||p.lon==null){
@@ -469,7 +485,11 @@ function openDetail(i,fly){
   const badge=$('#d-badge'); badge.textContent=(p.type==='reference'?'REFERENCE':'SPECIMEN '+p._label); badge.className='d-badge'+(p.type==='reference'?' ref':'');
   $('#d-fname').textContent=p.file;
   const t=$('#d-title');
-  if(p.title?.trim()){ t.textContent=p.title; t.className=''; }
+  if(editMode){
+    t.className='';
+    t.innerHTML=`<input class="edit-field edit-title" placeholder="Title…" value="${esc(p.title||'')}">`;
+    t.querySelector('input').addEventListener('input',e=>{ p.title=e.target.value; saveOverride(p.file,{title:e.target.value}); refreshRow(i); });
+  } else if(p.title?.trim()){ t.textContent=p.title; t.className=''; }
   else { t.textContent='Untitled specimen'; t.className='untitled'; }
   $('#d-lat').textContent=p.lat!=null?fLat(p.lat):'—';
   $('#d-lon').textContent=p.lon!=null?fLon(p.lon):'—';
@@ -484,10 +504,18 @@ function openDetail(i,fly){
   }
   $('#d-brg').textContent=brg;
   const desc=$('#d-desc');
-  if(p.description?.trim()){ desc.textContent=p.description; desc.className='d-desc'; }
-  else { desc.textContent='No field notes recorded yet. Open index.html and write a description for this specimen.'; desc.className='d-desc empty'; }
+  if(editMode){
+    desc.className='d-desc';
+    desc.innerHTML=`<div class="edit-label">Description / field notes</div><textarea class="edit-field" rows="6" placeholder="Type your notes…">${esc(p.description||'')}</textarea>`;
+    desc.querySelector('textarea').addEventListener('input',e=>{ p.description=e.target.value; saveOverride(p.file,{description:e.target.value}); });
+  } else if(p.description?.trim()){ desc.textContent=p.description; desc.className='d-desc'; }
+  else { desc.textContent='No field notes recorded yet. Turn on ✎ Edit Text to add a description.'; desc.className='d-desc empty'; }
   const vid=$('#d-video');
   vid.innerHTML='';
+  if(editMode){
+    vid.innerHTML=`<div class="edit-label">Video link — YouTube/Vimeo URL, or media/clip.mp4</div><input class="edit-field" placeholder="https://…" value="${esc(p.video||'')}">`;
+    vid.querySelector('input').addEventListener('input',e=>{ p.video=e.target.value; saveOverride(p.file,{video:e.target.value}); });
+  } else {
   const v=(p.video||'').trim();
   if(v){
     if(/\.(mp4|webm|mov|m4v|ogg)(\?.*)?$/i.test(v)){
@@ -497,6 +525,7 @@ function openDetail(i,fly){
     } else {
       vid.innerHTML=`<a class="btn red" href="${esc(v)}" target="_blank" rel="noopener">▶ Watch Footage</a>`;
     }
+  }
   }
   $('#detail').classList.add('open');
   if(fly&&p.lat!=null&&p.type!=='reference') map.flyTo([p.lat,p.lon],Math.max(map.getZoom(),16),{duration:.7});
@@ -519,7 +548,8 @@ const ADD_HTML = `
 <p>If the photo still has its location data (taken on a phone with GPS on), you can leave out <code>lat</code>/<code>lon</code>/<code>alt</code>/<code>time</code> entirely — the page reads them out of the photo automatically.</p>
 <p>If it has no GPS, add the coordinates yourself: <code>lat:41.2790, lon:-69.9650</code>.</p>
 <h4>3 · Title, description &amp; video</h4>
-<p>Fill in <code>title</code> and <code>description</code> with your own text. Use <code>\\n</code> for line breaks.</p>
+<p><b>Easiest:</b> click <b>✎ Edit Text</b> in the sidebar, pick the photo, and type right into the Title / Description / Video fields. Then click <b>⤓ Export</b> to publish (download the updated <code>index.html</code> and re-upload it to GitHub).</p>
+<p>Or edit the <code>title</code> / <code>description</code> / <code>video</code> values directly in the code block here. Use <code>\\n</code> for line breaks.</p>
 <p>For <code>video</code> you have two options:</p>
 <p>• <b>A link</b> — upload the clip to YouTube or Vimeo (Unlisted is fine) and paste the share URL. Shows a ▶ button. Best for big files.</p>
 <p>• <b>A file in the repo</b> — drop a short <code>.mp4</code> into a <code>media</code> folder and set <code>video:"media/clip.mp4"</code>. It then plays <i>inline</i> right in the panel. Keep it small (compress to well under 100&nbsp;MB).</p>
@@ -543,6 +573,60 @@ $('#help-add').addEventListener('click',()=>modal('Adding Photos',ADD_HTML));
 $('#help-deploy').addEventListener('click',()=>modal('Publish a Shareable Link',DEPLOY_HTML));
 $('#modal-close').addEventListener('click',()=>$('#scrim').classList.remove('open'));
 $('#scrim').addEventListener('click',e=>{ if(e.target===$('#scrim'))$('#scrim').classList.remove('open'); });
+
+/* ---------- edit mode + export ---------- */
+const LS_KEY='nan_geo_overrides_v1';
+function loadOverrides(){ try{ return JSON.parse(localStorage.getItem(LS_KEY)||'{}'); }catch(e){ return {}; } }
+function saveOverride(file,patch){ const o=loadOverrides(); o[file]={...(o[file]||{}),...patch}; localStorage.setItem(LS_KEY,JSON.stringify(o)); }
+function refreshRow(i){ const row=document.querySelector('.spec[data-i="'+i+'"]'); if(!row)return; const p=PHOTOS[i]; const st=row.querySelector('.st');
+  if(p.title&&p.title.trim()){ st.textContent=p.title; st.className='st'; } else { st.textContent='Untitled — add a title'; st.className='st untitled'; } }
+let editMode=false;
+$('#edit-toggle').addEventListener('click',()=>{
+  editMode=!editMode;
+  $('#edit-toggle').classList.toggle('on',editMode);
+  $('#edit-toggle').textContent=editMode?'✓ Done Editing':'✎ Edit Text';
+  document.body.classList.toggle('editing',editMode);
+  if(active>-1){ openDetail(active,false); }
+  else if(editMode){ // open first specimen so the fields are visible
+    const first=PHOTOS.findIndex(p=>p.type!=='reference'); if(first>-1) openDetail(first,true);
+  }
+});
+
+function jstr(s){ return JSON.stringify(s==null?'':s); }
+function serializePhotos(){
+  return 'const PHOTOS = [\n'+PHOTOS.map(p=>{
+    const geo=`lat:${p.lat==null?'null':p.lat}, lon:${p.lon==null?'null':p.lon}, alt:${p.alt==null?'null':p.alt}, time:${jstr(p.time)}`;
+    return `  { file:${jstr(p.file)}, type:${jstr(p.type)},\n    title:${jstr(p.title)},\n    description:${jstr(p.description)},\n    video:${jstr(p.video)},\n    ${geo} },`;
+  }).join('\n\n')+'\n];';
+}
+async function buildUpdatedFile(){
+  try{
+    const src=await (await fetch(location.href,{cache:'no-store'})).text();
+    if(src.includes('/*PHOTOS_START*/')&&src.includes('/*PHOTOS_END*/')){
+      return src.replace(/\/\*PHOTOS_START\*\/[\s\S]*?\/\*PHOTOS_END\*\//,'/*PHOTOS_START*/\n'+serializePhotos()+'\n/*PHOTOS_END*/');
+    }
+  }catch(e){}
+  return null;
+}
+function downloadText(name,text,type){ const b=new Blob([text],{type:type||'text/plain'}); const u=URL.createObjectURL(b);
+  const a=document.createElement('a'); a.href=u; a.download=name; document.body.appendChild(a); a.click(); a.remove(); setTimeout(()=>URL.revokeObjectURL(u),3000); }
+
+$('#export-btn').addEventListener('click',async()=>{
+  const full=await buildUpdatedFile();
+  const block=serializePhotos();
+  modal('Publish Your Edits', `
+    <p>Your edits are saved in this browser. To make them show on your shared GitHub link, update the file there.</p>
+    <h4>Easiest — replace the whole file</h4>
+    <p>Download the updated <code>index.html</code> and re-upload it to your GitHub repo (it replaces the old one; your <code>images</code> folder stays put).</p>
+    <p><button class="btn red" id="dl-file" ${full?'':'disabled title="Open from a server/GitHub to enable"'}>⤓ Download updated index.html</button></p>
+    <h4>Or — paste just the data</h4>
+    <p>On GitHub open <code>index.html</code> → pencil ✎ → select everything between <code>/*PHOTOS_START*/</code> and <code>/*PHOTOS_END*/</code> and replace it with this, then Commit:</p>
+    <p><button class="btn" id="copy-block">⎘ Copy data block</button></p>
+    <pre id="block-pre" style="max-height:200px">${esc(block)}</pre>`);
+  const dl=$('#dl-file'); if(dl&&full) dl.addEventListener('click',()=>downloadText('index.html',full,'text/html'));
+  const cp=$('#copy-block'); if(cp) cp.addEventListener('click',()=>{ navigator.clipboard.writeText(block).then(()=>{cp.textContent='✓ Copied';setTimeout(()=>cp.textContent='⎘ Copy data block',1500);}); });
+});
 </script>
 </body>
 </html>
+<script type="application/json" id="__om_srcmap">{"gen":"c10ae09e","entries":[{"id":"c10ae09e:0","tag":"html","openStart":16,"attrEnd":31,"openEnd":32,"closeStart":38044,"closeEnd":38051,"textRuns":[[32,33],[12385,12386],[38043,38044]],"parentId":null,"childIds":["c10ae09e:1","c10ae09e:8"]},{"id":"c10ae09e:1","tag":"head","openStart":33,"attrEnd":38,"openEnd":39,"closeStart":12378,"closeEnd":12385,"textRuns":[[39,40],[62,63],[148,149],[214,215],[274,275],[343,344],[545,546],[704,705],[855,856],[12377,12378]],"parentId":"c10ae09e:0","childIds":["c10ae09e:2","c10ae09e:3","c10ae09e:4","c10ae09e:5","c10ae09e:6","c10ae09e:7"]},{"id":"c10ae09e:2","tag":"meta","openStart":40,"attrEnd":61,"openEnd":62,"closeEnd":62,"textRuns":[],"parentId":"c10ae09e:1","childIds":[]},{"id":"c10ae09e:3","tag":"meta","openStart":63,"attrEnd":147,"openEnd":148,"closeEnd":148,"textRuns":[],"parentId":"c10ae09e:1","childIds":[]},{"id":"c10ae09e:4","tag":"link","openStart":215,"attrEnd":273,"openEnd":274,"closeEnd":274,"textRuns":[],"parentId":"c10ae09e:1","childIds":[]},{"id":"c10ae09e:5","tag":"link","openStart":275,"attrEnd":342,"openEnd":343,"closeEnd":343,"textRuns":[],"parentId":"c10ae09e:1","childIds":[]},{"id":"c10ae09e:6","tag":"link","openStart":344,"attrEnd":544,"openEnd":545,"closeEnd":545,"textRuns":[],"parentId":"c10ae09e:1","childIds":[]},{"id":"c10ae09e:7","tag":"link","openStart":546,"attrEnd":703,"openEnd":704,"closeEnd":704,"textRuns":[],"parentId":"c10ae09e:1","childIds":[]},{"id":"c10ae09e:8","tag":"body","openStart":12386,"attrEnd":12391,"openEnd":12392,"closeStart":38036,"closeEnd":38043,"textRuns":[[12392,12393],[14469,14471],[15550,15552],[15815,15817],[20377,20378],[38035,38036]],"parentId":"c10ae09e:0","childIds":["c10ae09e:9","c10ae09e:66","c10ae09e:96"]},{"id":"c10ae09e:9","tag":"div","openStart":12393,"attrEnd":12409,"openEnd":12410,"closeStart":14463,"closeEnd":14469,"textRuns":[[12410,12413],[13859,13863],[14462,14463]],"parentId":"c10ae09e:8","childIds":["c10ae09e:10","c10ae09e:49"]},{"id":"c10ae09e:10","tag":"aside","openStart":12413,"attrEnd":12435,"openEnd":12436,"closeStart":13851,"closeEnd":13859,"textRuns":[[12436,12441],[13317,13322],[13425,13430],[13472,13477],[13848,13851]],"parentId":"c10ae09e:9","childIds":["c10ae09e:11","c10ae09e:37","c10ae09e:41","c10ae09e:42"]},{"id":"c10ae09e:11","tag":"div","openStart":12441,"attrEnd":12462,"openEnd":12463,"closeStart":13311,"closeEnd":13317,"textRuns":[[12463,12470],[12528,12535],[12643,12650],[12706,12713],[12803,12810],[13306,13311]],"parentId":"c10ae09e:10","childIds":["c10ae09e:12","c10ae09e:13","c10ae09e:14","c10ae09e:17","c10ae09e:20","c10ae09e:21"]},{"id":"c10ae09e:12","tag":"span","openStart":12470,"attrEnd":12491,"openEnd":12492,"closeStart":12492,"closeEnd":12499,"textRuns":[],"parentId":"c10ae09e:11","childIds":[]},{"id":"c10ae09e:13","tag":"span","openStart":12499,"attrEnd":12520,"openEnd":12521,"closeStart":12521,"closeEnd":12528,"textRuns":[],"parentId":"c10ae09e:11","childIds":[]},{"id":"c10ae09e:14","tag":"div","openStart":12535,"attrEnd":12555,"openEnd":12556,"closeStart":12637,"closeEnd":12643,"textRuns":[],"parentId":"c10ae09e:11","childIds":["c10ae09e:15","c10ae09e:16"]},{"id":"c10ae09e:15","tag":"span","openStart":12556,"attrEnd":12561,"openEnd":12562,"closeStart":12595,"closeEnd":12602,"textRuns":[[12562,12595]],"parentId":"c10ae09e:14","childIds":[]},{"id":"c10ae09e:16","tag":"span","openStart":12602,"attrEnd":12619,"openEnd":12620,"closeStart":12630,"closeEnd":12637,"textRuns":[[12620,12630]],"parentId":"c10ae09e:14","childIds":[]},{"id":"c10ae09e:17","tag":"h1","openStart":12650,"attrEnd":12667,"openEnd":12668,"closeStart":12701,"closeEnd":12706,"textRuns":[[12668,12684]],"parentId":"c10ae09e:11","childIds":["c10ae09e:18","c10ae09e:19"]},{"id":"c10ae09e:18","tag":"br","openStart":12684,"attrEnd":12687,"openEnd":12688,"closeEnd":12688,"textRuns":[],"parentId":"c10ae09e:17","childIds":[]},{"id":"c10ae09e:19","tag":"b","openStart":12688,"attrEnd":12690,"openEnd":12691,"closeStart":12697,"closeEnd":12701,"textRuns":[[12691,12697]],"parentId":"c10ae09e:17","childIds":[]},{"id":"c10ae09e:20","tag":"div","openStart":12713,"attrEnd":12734,"openEnd":12735,"closeStart":12797,"closeEnd":12803,"textRuns":[[12735,12797]],"parentId":"c10ae09e:11","childIds":[]},{"id":"c10ae09e:21","tag":"div","openStart":12810,"attrEnd":12831,"openEnd":12832,"closeStart":13300,"closeEnd":13306,"textRuns":[[12832,12841],[12928,12937],[13025,13034],[13098,13107],[13185,13194],[13293,13300]],"parentId":"c10ae09e:11","childIds":["c10ae09e:22","c10ae09e:25","c10ae09e:28","c10ae09e:31","c10ae09e:34"]},{"id":"c10ae09e:22","tag":"div","openStart":12841,"attrEnd":12845,"openEnd":12846,"closeStart":12922,"closeEnd":12928,"textRuns":[],"parentId":"c10ae09e:21","childIds":["c10ae09e:23","c10ae09e:24"]},{"id":"c10ae09e:23","tag":"div","openStart":12846,"attrEnd":12860,"openEnd":12861,"closeStart":12873,"closeEnd":12879,"textRuns":[[12861,12873]],"parentId":"c10ae09e:22","childIds":[]},{"id":"c10ae09e:24","tag":"div","openStart":12879,"attrEnd":12904,"openEnd":12905,"closeStart":12916,"closeEnd":12922,"textRuns":[[12905,12916]],"parentId":"c10ae09e:22","childIds":[]},{"id":"c10ae09e:25","tag":"div","openStart":12937,"attrEnd":12941,"openEnd":12942,"closeStart":13019,"closeEnd":13025,"textRuns":[],"parentId":"c10ae09e:21","childIds":["c10ae09e:26","c10ae09e:27"]},{"id":"c10ae09e:26","tag":"div","openStart":12942,"attrEnd":12956,"openEnd":12957,"closeStart":12968,"closeEnd":12974,"textRuns":[[12957,12968]],"parentId":"c10ae09e:25","childIds":[]},{"id":"c10ae09e:27","tag":"div","openStart":12974,"attrEnd":13000,"openEnd":13001,"closeStart":13013,"closeEnd":13019,"textRuns":[[13001,13013]],"parentId":"c10ae09e:25","childIds":[]},{"id":"c10ae09e:28","tag":"div","openStart":13034,"attrEnd":13038,"openEnd":13039,"closeStart":13092,"closeEnd":13098,"textRuns":[],"parentId":"c10ae09e:21","childIds":["c10ae09e:29","c10ae09e:30"]},{"id":"c10ae09e:29","tag":"div","openStart":13039,"attrEnd":13053,"openEnd":13054,"closeStart":13059,"closeEnd":13065,"textRuns":[[13054,13059]],"parentId":"c10ae09e:28","childIds":[]},{"id":"c10ae09e:30","tag":"div","openStart":13065,"attrEnd":13079,"openEnd":13080,"closeStart":13086,"closeEnd":13092,"textRuns":[[13080,13086]],"parentId":"c10ae09e:28","childIds":[]},{"id":"c10ae09e:31","tag":"div","openStart":13107,"attrEnd":13111,"openEnd":13112,"closeStart":13179,"closeEnd":13185,"textRuns":[],"parentId":"c10ae09e:21","childIds":["c10ae09e:32","c10ae09e:33"]},{"id":"c10ae09e:32","tag":"div","openStart":13112,"attrEnd":13126,"openEnd":13127,"closeStart":13136,"closeEnd":13142,"textRuns":[[13127,13136]],"parentId":"c10ae09e:31","childIds":[]},{"id":"c10ae09e:33","tag":"div","openStart":13142,"attrEnd":13169,"openEnd":13170,"closeStart":13173,"closeEnd":13179,"textRuns":[[13170,13173]],"parentId":"c10ae09e:31","childIds":[]},{"id":"c10ae09e:34","tag":"div","openStart":13194,"attrEnd":13212,"openEnd":13213,"closeStart":13287,"closeEnd":13293,"textRuns":[],"parentId":"c10ae09e:21","childIds":["c10ae09e:35","c10ae09e:36"]},{"id":"c10ae09e:35","tag":"div","openStart":13213,"attrEnd":13227,"openEnd":13228,"closeStart":13243,"closeEnd":13249,"textRuns":[[13228,13243]],"parentId":"c10ae09e:34","childIds":[]},{"id":"c10ae09e:36","tag":"div","openStart":13249,"attrEnd":13277,"openEnd":13278,"closeStart":13281,"closeEnd":13287,"textRuns":[[13278,13281]],"parentId":"c10ae09e:34","childIds":[]},{"id":"c10ae09e:37","tag":"div","openStart":13322,"attrEnd":13343,"openEnd":13344,"closeStart":13419,"closeEnd":13425,"textRuns":[],"parentId":"c10ae09e:10","childIds":["c10ae09e:38","c10ae09e:40"]},{"id":"c10ae09e:38","tag":"span","openStart":13344,"attrEnd":13349,"openEnd":13350,"closeStart":13371,"closeEnd":13378,"textRuns":[[13350,13359]],"parentId":"c10ae09e:37","childIds":["c10ae09e:39"]},{"id":"c10ae09e:39","tag":"b","openStart":13359,"attrEnd":13361,"openEnd":13362,"closeStart":13367,"closeEnd":13371,"textRuns":[[13362,13367]],"parentId":"c10ae09e:38","childIds":[]},{"id":"c10ae09e:40","tag":"span","openStart":13378,"attrEnd":13396,"openEnd":13397,"closeStart":13412,"closeEnd":13419,"textRuns":[[13397,13412]],"parentId":"c10ae09e:37","childIds":[]},{"id":"c10ae09e:41","tag":"div","openStart":13430,"attrEnd":13465,"openEnd":13466,"closeStart":13466,"closeEnd":13472,"textRuns":[],"parentId":"c10ae09e:10","childIds":[]},{"id":"c10ae09e:42","tag":"div","openStart":13477,"attrEnd":13502,"openEnd":13503,"closeStart":13842,"closeEnd":13848,"textRuns":[[13503,13510],[13571,13578],[13635,13642],[13701,13708],[13763,13770],[13837,13842]],"parentId":"c10ae09e:10","childIds":["c10ae09e:43","c10ae09e:44","c10ae09e:45","c10ae09e:46","c10ae09e:47"]},{"id":"c10ae09e:43","tag":"button","openStart":13510,"attrEnd":13547,"openEnd":13548,"closeStart":13562,"closeEnd":13571,"textRuns":[[13548,13562]],"parentId":"c10ae09e:42","childIds":[]},{"id":"c10ae09e:44","tag":"button","openStart":13578,"attrEnd":13614,"openEnd":13615,"closeStart":13626,"closeEnd":13635,"textRuns":[[13615,13626]],"parentId":"c10ae09e:42","childIds":[]},{"id":"c10ae09e:45","tag":"button","openStart":13642,"attrEnd":13678,"openEnd":13679,"closeStart":13692,"closeEnd":13701,"textRuns":[[13679,13692]],"parentId":"c10ae09e:42","childIds":[]},{"id":"c10ae09e:46","tag":"button","openStart":13708,"attrEnd":13743,"openEnd":13744,"closeStart":13754,"closeEnd":13763,"textRuns":[[13744,13754]],"parentId":"c10ae09e:42","childIds":[]},{"id":"c10ae09e:47","tag":"div","openStart":13770,"attrEnd":13794,"openEnd":13795,"closeStart":13831,"closeEnd":13837,"textRuns":[[13795,13810],[13814,13831]],"parentId":"c10ae09e:42","childIds":["c10ae09e:48"]},{"id":"c10ae09e:48","tag":"br","openStart":13810,"attrEnd":13813,"openEnd":13814,"closeEnd":13814,"textRuns":[],"parentId":"c10ae09e:47","childIds":[]},{"id":"c10ae09e:49","tag":"main","openStart":13863,"attrEnd":13884,"openEnd":13885,"closeStart":14455,"closeEnd":14462,"textRuns":[[13885,13890],[13910,13915],[13943,13948],[13975,13980],[14113,14118],[14286,14291],[14452,14455]],"parentId":"c10ae09e:9","childIds":["c10ae09e:50","c10ae09e:51","c10ae09e:52","c10ae09e:53","c10ae09e:58","c10ae09e:62"]},{"id":"c10ae09e:50","tag":"div","openStart":13890,"attrEnd":13903,"openEnd":13904,"closeStart":13904,"closeEnd":13910,"textRuns":[],"parentId":"c10ae09e:49","childIds":[]},{"id":"c10ae09e:51","tag":"div","openStart":13915,"attrEnd":13936,"openEnd":13937,"closeStart":13937,"closeEnd":13943,"textRuns":[],"parentId":"c10ae09e:49","childIds":[]},{"id":"c10ae09e:52","tag":"div","openStart":13948,"attrEnd":13968,"openEnd":13969,"closeStart":13969,"closeEnd":13975,"textRuns":[],"parentId":"c10ae09e:49","childIds":[]},{"id":"c10ae09e:53","tag":"div","openStart":13980,"attrEnd":13999,"openEnd":14000,"closeStart":14107,"closeEnd":14113,"textRuns":[],"parentId":"c10ae09e:49","childIds":["c10ae09e:54"]},{"id":"c10ae09e:54","tag":"div","openStart":14000,"attrEnd":14017,"openEnd":14018,"closeStart":14101,"closeEnd":14107,"textRuns":[],"parentId":"c10ae09e:53","childIds":["c10ae09e:55","c10ae09e:56"]},{"id":"c10ae09e:55","tag":"div","openStart":14018,"attrEnd":14033,"openEnd":14034,"closeStart":14040,"closeEnd":14046,"textRuns":[[14034,14040]],"parentId":"c10ae09e:54","childIds":[]},{"id":"c10ae09e:56","tag":"div","openStart":14046,"attrEnd":14061,"openEnd":14062,"closeStart":14095,"closeEnd":14101,"textRuns":[[14062,14078]],"parentId":"c10ae09e:54","childIds":["c10ae09e:57"]},{"id":"c10ae09e:57","tag":"b","openStart":14078,"attrEnd":14080,"openEnd":14081,"closeStart":14091,"closeEnd":14095,"textRuns":[[14081,14091]],"parentId":"c10ae09e:56","childIds":[]},{"id":"c10ae09e:58","tag":"div","openStart":14118,"attrEnd":14137,"openEnd":14138,"closeStart":14280,"closeEnd":14286,"textRuns":[],"parentId":"c10ae09e:49","childIds":["c10ae09e:59"]},{"id":"c10ae09e:59","tag":"div","openStart":14138,"attrEnd":14169,"openEnd":14170,"closeStart":14274,"closeEnd":14280,"textRuns":[[14170,14177],[14227,14234],[14269,14274]],"parentId":"c10ae09e:58","childIds":["c10ae09e:60","c10ae09e:61"]},{"id":"c10ae09e:60","tag":"button","openStart":14177,"attrEnd":14208,"openEnd":14209,"closeStart":14218,"closeEnd":14227,"textRuns":[[14209,14218]],"parentId":"c10ae09e:59","childIds":[]},{"id":"c10ae09e:61","tag":"button","openStart":14234,"attrEnd":14255,"openEnd":14256,"closeStart":14260,"closeEnd":14269,"textRuns":[[14256,14260]],"parentId":"c10ae09e:59","childIds":[]},{"id":"c10ae09e:62","tag":"div","openStart":14291,"attrEnd":14310,"openEnd":14311,"closeStart":14446,"closeEnd":14452,"textRuns":[],"parentId":"c10ae09e:49","childIds":["c10ae09e:63"]},{"id":"c10ae09e:63","tag":"div","openStart":14311,"attrEnd":14336,"openEnd":14337,"closeStart":14440,"closeEnd":14446,"textRuns":[],"parentId":"c10ae09e:62","childIds":["c10ae09e:64","c10ae09e:65"]},{"id":"c10ae09e:64","tag":"div","openStart":14337,"attrEnd":14352,"openEnd":14353,"closeStart":14372,"closeEnd":14378,"textRuns":[[14353,14372]],"parentId":"c10ae09e:63","childIds":[]},{"id":"c10ae09e:65","tag":"div","openStart":14378,"attrEnd":14406,"openEnd":14407,"closeStart":14434,"closeEnd":14440,"textRuns":[[14407,14434]],"parentId":"c10ae09e:63","childIds":[]},{"id":"c10ae09e:66","tag":"div","openStart":14471,"attrEnd":14502,"openEnd":14503,"closeStart":15544,"closeEnd":15550,"textRuns":[[14503,14506],[14734,14737],[14862,14865],[15543,15544]],"parentId":"c10ae09e:8","childIds":["c10ae09e:67","c10ae09e:72","c10ae09e:73"]},{"id":"c10ae09e:67","tag":"div","openStart":14506,"attrEnd":14539,"openEnd":14540,"closeStart":14728,"closeEnd":14734,"textRuns":[[14540,14545],[14569,14574],[14621,14626],[14675,14680],[14725,14728]],"parentId":"c10ae09e:66","childIds":["c10ae09e:68","c10ae09e:69","c10ae09e:70","c10ae09e:71"]},{"id":"c10ae09e:68","tag":"div","openStart":14545,"attrEnd":14562,"openEnd":14563,"closeStart":14563,"closeEnd":14569,"textRuns":[],"parentId":"c10ae09e:67","childIds":[]},{"id":"c10ae09e:69","tag":"div","openStart":14574,"attrEnd":14607,"openEnd":14608,"closeStart":14615,"closeEnd":14621,"textRuns":[[14608,14615]],"parentId":"c10ae09e:67","childIds":[]},{"id":"c10ae09e:70","tag":"button","openStart":14626,"attrEnd":14662,"openEnd":14663,"closeStart":14666,"closeEnd":14675,"textRuns":[[14663,14666]],"parentId":"c10ae09e:67","childIds":[]},{"id":"c10ae09e:71","tag":"div","openStart":14680,"attrEnd":14718,"openEnd":14719,"closeStart":14719,"closeEnd":14725,"textRuns":[],"parentId":"c10ae09e:67","childIds":[]},{"id":"c10ae09e:72","tag":"div","openStart":14737,"attrEnd":14778,"openEnd":14779,"closeStart":14856,"closeEnd":14862,"textRuns":[[14779,14856]],"parentId":"c10ae09e:66","childIds":[]},{"id":"c10ae09e:73","tag":"div","openStart":14865,"attrEnd":14884,"openEnd":14885,"closeStart":15537,"closeEnd":15543,"textRuns":[[14885,14890],[14915,14920],[15446,15451],[15489,15494],[15534,15537]],"parentId":"c10ae09e:66","childIds":["c10ae09e:74","c10ae09e:75","c10ae09e:94","c10ae09e:95"]},{"id":"c10ae09e:74","tag":"h2","openStart":14890,"attrEnd":14906,"openEnd":14907,"closeStart":14910,"closeEnd":14915,"textRuns":[[14907,14910]],"parentId":"c10ae09e:73","childIds":[]},{"id":"c10ae09e:75","tag":"div","openStart":14920,"attrEnd":14939,"openEnd":14940,"closeStart":15440,"closeEnd":15446,"textRuns":[[14940,14947],[15022,15029],[15105,15112],[15188,15195],[15271,15278],[15354,15361],[15435,15440]],"parentId":"c10ae09e:73","childIds":["c10ae09e:76","c10ae09e:79","c10ae09e:82","c10ae09e:85","c10ae09e:88","c10ae09e:91"]},{"id":"c10ae09e:76","tag":"div","openStart":14947,"attrEnd":14951,"openEnd":14952,"closeStart":15016,"closeEnd":15022,"textRuns":[],"parentId":"c10ae09e:75","childIds":["c10ae09e:77","c10ae09e:78"]},{"id":"c10ae09e:77","tag":"div","openStart":14952,"attrEnd":14966,"openEnd":14967,"closeStart":14975,"closeEnd":14981,"textRuns":[[14967,14975]],"parentId":"c10ae09e:76","childIds":[]},{"id":"c10ae09e:78","tag":"div","openStart":14981,"attrEnd":15006,"openEnd":15007,"closeStart":15010,"closeEnd":15016,"textRuns":[[15007,15010]],"parentId":"c10ae09e:76","childIds":[]},{"id":"c10ae09e:79","tag":"div","openStart":15029,"attrEnd":15033,"openEnd":15034,"closeStart":15099,"closeEnd":15105,"textRuns":[],"parentId":"c10ae09e:75","childIds":["c10ae09e:80","c10ae09e:81"]},{"id":"c10ae09e:80","tag":"div","openStart":15034,"attrEnd":15048,"openEnd":15049,"closeStart":15058,"closeEnd":15064,"textRuns":[[15049,15058]],"parentId":"c10ae09e:79","childIds":[]},{"id":"c10ae09e:81","tag":"div","openStart":15064,"attrEnd":15089,"openEnd":15090,"closeStart":15093,"closeEnd":15099,"textRuns":[[15090,15093]],"parentId":"c10ae09e:79","childIds":[]},{"id":"c10ae09e:82","tag":"div","openStart":15112,"attrEnd":15116,"openEnd":15117,"closeStart":15182,"closeEnd":15188,"textRuns":[],"parentId":"c10ae09e:75","childIds":["c10ae09e:83","c10ae09e:84"]},{"id":"c10ae09e:83","tag":"div","openStart":15117,"attrEnd":15131,"openEnd":15132,"closeStart":15141,"closeEnd":15147,"textRuns":[[15132,15141]],"parentId":"c10ae09e:82","childIds":[]},{"id":"c10ae09e:84","tag":"div","openStart":15147,"attrEnd":15172,"openEnd":15173,"closeStart":15176,"closeEnd":15182,"textRuns":[[15173,15176]],"parentId":"c10ae09e:82","childIds":[]},{"id":"c10ae09e:85","tag":"div","openStart":15195,"attrEnd":15199,"openEnd":15200,"closeStart":15265,"closeEnd":15271,"textRuns":[],"parentId":"c10ae09e:75","childIds":["c10ae09e:86","c10ae09e:87"]},{"id":"c10ae09e:86","tag":"div","openStart":15200,"attrEnd":15214,"openEnd":15215,"closeStart":15223,"closeEnd":15229,"textRuns":[[15215,15223]],"parentId":"c10ae09e:85","childIds":[]},{"id":"c10ae09e:87","tag":"div","openStart":15229,"attrEnd":15255,"openEnd":15256,"closeStart":15259,"closeEnd":15265,"textRuns":[[15256,15259]],"parentId":"c10ae09e:85","childIds":[]},{"id":"c10ae09e:88","tag":"div","openStart":15278,"attrEnd":15282,"openEnd":15283,"closeStart":15348,"closeEnd":15354,"textRuns":[],"parentId":"c10ae09e:75","childIds":["c10ae09e:89","c10ae09e:90"]},{"id":"c10ae09e:89","tag":"div","openStart":15283,"attrEnd":15297,"openEnd":15298,"closeStart":15306,"closeEnd":15312,"textRuns":[[15298,15306]],"parentId":"c10ae09e:88","childIds":[]},{"id":"c10ae09e:90","tag":"div","openStart":15312,"attrEnd":15338,"openEnd":15339,"closeStart":15342,"closeEnd":15348,"textRuns":[[15339,15342]],"parentId":"c10ae09e:88","childIds":[]},{"id":"c10ae09e:91","tag":"div","openStart":15361,"attrEnd":15365,"openEnd":15366,"closeStart":15429,"closeEnd":15435,"textRuns":[],"parentId":"c10ae09e:75","childIds":["c10ae09e:92","c10ae09e:93"]},{"id":"c10ae09e:92","tag":"div","openStart":15366,"attrEnd":15380,"openEnd":15381,"closeStart":15388,"closeEnd":15394,"textRuns":[[15381,15388]],"parentId":"c10ae09e:91","childIds":[]},{"id":"c10ae09e:93","tag":"div","openStart":15394,"attrEnd":15419,"openEnd":15420,"closeStart":15423,"closeEnd":15429,"textRuns":[[15420,15423]],"parentId":"c10ae09e:91","childIds":[]},{"id":"c10ae09e:94","tag":"div","openStart":15451,"attrEnd":15482,"openEnd":15483,"closeStart":15483,"closeEnd":15489,"textRuns":[],"parentId":"c10ae09e:73","childIds":[]},{"id":"c10ae09e:95","tag":"div","openStart":15494,"attrEnd":15527,"openEnd":15528,"closeStart":15528,"closeEnd":15534,"textRuns":[],"parentId":"c10ae09e:73","childIds":[]},{"id":"c10ae09e:96","tag":"div","openStart":15552,"attrEnd":15581,"openEnd":15582,"closeStart":15809,"closeEnd":15815,"textRuns":[[15582,15585],[15808,15809]],"parentId":"c10ae09e:8","childIds":["c10ae09e:97"]},{"id":"c10ae09e:97","tag":"div","openStart":15585,"attrEnd":15603,"openEnd":15604,"closeStart":15802,"closeEnd":15808,"textRuns":[[15604,15609],[15751,15756],[15799,15802]],"parentId":"c10ae09e:96","childIds":["c10ae09e:98","c10ae09e:101"]},{"id":"c10ae09e:98","tag":"div","openStart":15609,"attrEnd":15629,"openEnd":15630,"closeStart":15745,"closeEnd":15751,"textRuns":[],"parentId":"c10ae09e:97","childIds":["c10ae09e:99","c10ae09e:100"]},{"id":"c10ae09e:99","tag":"h3","openStart":15630,"attrEnd":15650,"openEnd":15651,"closeStart":15663,"closeEnd":15668,"textRuns":[[15651,15663]],"parentId":"c10ae09e:98","childIds":[]},{"id":"c10ae09e:100","tag":"button","openStart":15668,"attrEnd":15732,"openEnd":15733,"closeStart":15736,"closeEnd":15745,"styleAttr":[15699,15714],"textRuns":[[15733,15736]],"parentId":"c10ae09e:98","childIds":[]},{"id":"c10ae09e:101","tag":"div","openStart":15756,"attrEnd":15792,"openEnd":15793,"closeStart":15793,"closeEnd":15799,"textRuns":[],"parentId":"c10ae09e:97","childIds":[]}],"literals":[[17248,17261],[17270,17279],[17293,17337],[17357,17357],[17371,17371],[17425,17441],[17457,17470],[17479,17487],[17501,17554],[17574,17574],[17588,17588],[17642,17658],[17674,17687],[17696,17704],[17718,17754],[17774,17774],[17788,17788],[17842,17858],[17874,17887],[17896,17904],[17918,17960],[17980,17980],[17994,17994],[18048,18064],[18080,18093],[18102,18110],[18124,18158],[18178,18178],[18192,18192],[18246,18262],[18278,18291],[18300,18308],[18322,18356],[18376,18376],[18390,18390],[18444,18460],[18476,18489],[18498,18506],[18520,18556],[18576,18576],[18590,18590],[18644,18660],[18676,18689],[18698,18706],[18720,18756],[18776,18776],[18790,18790],[18844,18860],[18876,18889],[18898,18906],[18920,18958],[18978,18978],[18992,18992],[19046,19062],[19078,19091],[19100,19108],[19122,19157],[19177,19177],[19191,19191],[19245,19261],[19277,19290],[19299,19307],[19321,19361],[19381,19381],[19395,19395],[19449,19465],[19637,19654],[19663,19671],[19685,19710],[19730,19730],[19744,19772],[19887,19897],[19913,19927],[19936,19944],[19958,19991],[20011,20011],[20025,20025],[20079,20095],[20111,20124],[20133,20141],[20155,20208],[20228,20228],[20242,20275],[20329,20345],[20538,20539],[20564,20565],[20569,20570],[20620,20623],[20632,20633],[20636,20637],[20668,20671],[20680,20681],[20684,20685],[20720,20725],[20781,20782],[20797,20798],[20854,20855],[21151,21152],[21155,21158],[21161,21163],[21166,21169],[21172,21173],[21176,21179],[21182,21184],[21187,21190],[21193,21194],[21197,21200],[21203,21205],[21208,21211],[21214,21215],[21218,21221],[21224,21226],[21229,21232],[21260,21263],[22609,22610],[22674,22675],[22823,22826],[22930,22941],[22990,23001],[23037,23082],[23134,23227],[23281,23375],[23439,23556],[23645,23652],[23673,23678],[23713,23719],[23767,23781],[23815,23817],[23841,23843],[23970,23979],[23989,23997],[24034,24038],[24171,24180],[24353,24358],[24361,24372],[24375,24380],[24584,24591],[24885,24894],[24899,24900],[24928,24929],[24953,24961],[25015,25016],[25020,25036],[25171,25180],[25234,25237],[25240,25242],[25246,25251],[25290,25293],[25296,25298],[25329,25338],[25360,25360],[25426,25429],[25451,25455],[25468,25477],[25480,25484],[25487,25487],[25548,25564],[25579,25585],[25590,25645],[25702,25705],[25708,25711],[25715,25717],[25734,25745],[25768,25785],[25796,25840],[25849,25885],[25893,25909],[25917,25929],[25957,25962],[26129,26138],[26226,26226],[26234,26250],[26262,26271],[26274,26277],[26280,26280],[26282,26292],[26296,26315],[26326,26338],[26444,26449],[26618,26618],[26644,26644],[26698,26705],[26741,26744],[26951,26951],[26978,26979],[26982,26987],[26990,26991],[26994,26998],[27001,27002],[27005,27009],[27012,27013],[27016,27022],[27173,27178],[27212,27218],[27269,27273],[27307,27313],[27340,27348],[27374,27386],[27395,27397],[27417,27425],[27458,27467],[27470,27479],[27482,27491],[27521,27528],[27541,27550],[27553,27557],[27560,27560],[27569,27577],[27613,27621],[27658,27658],[27678,27745],[27761,27761],[27764,27766],[27790,27795],[27816,27821],[27982,27982],[28011,28028],[28044,28052],[28062,28068],[28108,28111],[28119,28125],[28165,28168],[28176,28182],[28227,28229],[28232,28235],[28243,28250],[28274,28277],[28285,28292],[28342,28345],[28403,28406],[28424,28433],[28504,28504],[28530,28530],[28616,28622],[28658,28665],[28705,28711],[28734,28860],[28882,28882],[28885,28896],[28923,28931],[28952,28957],[29133,29139],[29171,29243],[29262,29274],[29294,29302],[29323,29323],[29361,29501],[29517,29517],[29520,29522],[29548,29553],[29574,29579],[29691,29691],[29847,30003],[30015,30077],[30086,30180],[30189,30199],[30236,30261],[30270,30324],[30346,30353],[30371,30375],[30412,30421],[30520,30527],[30548,30552],[30596,30620],[30654,30660],[30670,30678],[30699,30704],[30747,30754],[30773,30779],[30799,30805],[30826,30830],[30898,32678],[32703,33886],[33921,33933],[33958,33969],[33991,33997],[34015,34019],[34028,34037],[34058,34063],[34076,34089],[34106,34118],[34139,34144],[34157,34181],[34201,34213],[34234,34239],[34248,34254],[34275,34279],[34287,34293],[34314,34319],[34343,34349],[34355,34361],[34382,34386],[34456,34476],[34559,34561],[34796,34810],[34815,34817],[34884,34887],[34960,34962],[34990,35014],[35031,35042],[35072,35084],[35105,35110],[35145,35157],[35178,35180],[35198,35210],[35235,35251],[35254,35267],[35304,35311],[35485,35494],[35593,35593],[35639,35657],[35690,35694],[35709,35713],[35721,35727],[35742,35746],[35754,35760],[35775,35779],[35787,35794],[35824,35833],[35848,35855],[35870,35883],[35899,35918],[35940,35953],[35969,35976],[35982,35985],[35999,36003],[36007,36011],[36113,36121],[36155,36171],[36189,36203],[36283,36301],[36322,36338],[36455,36465],[36536,36537],[36672,36683],[36704,36709],[36803,36821],[36825,37199],[37207,37207],[37210,37262],[37264,37671],[37684,37690],[37708,37716],[37754,37759],[37779,37789],[37797,37806],[37825,37836],[37868,37873],[37944,37954],[37987,38006]]}</script>
